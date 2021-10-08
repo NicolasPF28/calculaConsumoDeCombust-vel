@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Calcula consumo</title>
+    </head>
+    <body>
+        <div class="containerCalculaConsumo">
+            <div id="logo">
+                <h1>Calculador de consumo de combustível</h1>
+            </div>
+            <div class="consumoBox">
+                <form action="./calculaConsumo.html" name="formCalculaConsumo" method="POST" onsubmit="return calculaConsumo();">
+                    <a href="./alcoolXGasolina.html">Àlcool ou gasolina? - Comparador</a>
+
+                    <p>Litros: <input type="text" name="litros"></p>
+                    <hr>
+                    <p>Kilômetros precorrido: <input type="text" name="caminho"></p>
+                    <hr>
+                    <p>Preço do combustível: <input type="text" name="preco"></p>
+                    <button type="submit" name="calcular">Calcular</button>
+                    <p>Kilômetros por litro: <input type="text" name="consumoUsuarioLitro" disabled></p>
+                    <hr>
+                    <p>Preço por kilômetro: <input type="text" name="precoPorKmUsuario" disabled></p>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="./js/consumo.js"></script>
+    </body>
+</html>

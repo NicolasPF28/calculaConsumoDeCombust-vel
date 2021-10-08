@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Calcula consumo</title>
+    </head>
+    <body>
+        <div class="containerAlcoolXGasolina">
+            <div id="logo">
+                <h1>Àlcool ou gasolina?</h1>
+            </div>
+            <div class="consumoBox">
+                <form action="./alcoolXGasolina.html" name="formAlcoolOuGasolina" method="POST" onsubmit="return alcoolXGasolina();">
+                    <a href="./calculaConsumo.html">Calculador de consumo de combustível</a>
+
+                    <p>Preço do álcool: <input type="text" name="precoDoAlcool"></p>
+                    <hr>
+                    <p>Preço da gasolina: <input type="text" name="precoDaGasolina"></p>
+                    <hr>
+                    <button type="submit" name="comparar">Comparar</button>
+                    <p>Qual vale mais a pena: <input type="text" name="qualValeMaisAPena" disabled></p>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="./js/alcoolXGasolina.js"></script>
+    </body>
+</html>
